@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f3ff;
+  color: #20183b;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 8%;
+  background: #ffffff;
+}
+.navbar .logo {
+  color: #20183b;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 800;
+}
+.navbar .logo span {
+  color: #7856c8;
+}
+.navbar .task-label {
+  color: #7856c8;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.hero {
+  padding: 90px 8%;
+  background: linear-gradient(135deg, #20183b, #7856c8);
+  color: #ffffff;
+}
+.hero .eyebrow {
+  color: #d6c7ff;
+}
+.hero h1 {
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.15;
+  margin: 20px 0;
+}
+.hero h1 span {
+  color: #d6c7ff;
+}
+.hero .description {
+  max-width: 540px;
+  color: #e5def7;
+  line-height: 1.8;
+}
+.hero .primary-button {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 14px 22px;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #7856c8;
+  text-decoration: none;
+  font-weight: bold;
+}
+.hero .primary-button:hover {
+  background: #e9e0ff;
+}
+
+.features {
+  padding: 65px 8%;
+}
+.features .eyebrow {
+  color: #7856c8;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.features h2 {
+  font-size: 32px;
+  margin-top: 10px;
+}
+.features .card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+.features .feature-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 8px 30px rgba(48, 32, 92, 0.0509803922);
+  transition: transform 0.2s;
+}
+.features .feature-card:hover {
+  transform: translateY(-6px);
+}
+.features .feature-card .icon {
+  font-size: 34px;
+}
+.features .feature-card h3 {
+  margin-top: 20px;
+}
+.features .feature-card p {
+  color: #625e73;
+  line-height: 1.7;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+  background: #20183b;
+  color: #ffffff;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    padding: 65px 6%;
+  }
+  .features {
+    padding: 45px 6%;
+  }
+  .features .card-grid {
+    grid-template-columns: 1fr;
+  }
+  .navbar {
+    padding: 20px 6%;
+  }
+  .navbar .task-label {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
